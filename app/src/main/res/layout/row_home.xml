@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ImgVideoThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/thumbnail_bg"
+                android:scaleType="fitXY"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-45dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="8"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bg_title"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.nimap.machinetest.customView.TextViewBold
+                        android:id="@+id/txt_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_horizontal"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:letterSpacing="0.04"
+                        android:paddingStart="5dp"
+                        android:textColor="@color/textDarkColor"
+                        android:textSize="15.3sp"
+                        tools:ignore="RtlSymmetry"
+                        tools:targetApi="lollipop"
+                        tools:text="Sachin yadav " />
+
+                    <com.nimap.machinetest.customView.TextViewMedium
+                        android:id="@+id/txt_Short_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_horizontal"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:letterSpacing="0.04"
+                        android:maxLines="3"
+                        android:minLines="1"
+                        android:padding="5dp"
+                        android:text="Learn How to Travel Safety"
+                        android:textColor="@color/textDarkColor"
+                        android:textSize="13.3sp"
+                        tools:ignore="UnusedAttribute" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgDelete"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center|center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/ic_favorite_black_24dp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_brightness_1_black_24dp"
+                android:gravity="center">
+
+                <com.nimap.machinetest.customView.TextViewBold
+                    android:id="@+id/txt_total_per"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="3dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="20"
+                    android:textColor="@color/white"
+                    android:textSize="13.3sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/blue"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.nimap.machinetest.customView.TextViewBold
+                        android:id="@+id/txt_Collection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:gravity="end"
+                        android:textColor="@color/white"
+                        android:textSize="16.3sp"
+                        android:visibility="visible"
+                        tools:text="200" />
+
+                    <com.nimap.machinetest.customView.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:letterSpacing="0.04"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:paddingStart="5dp"
+                        android:text="Funded"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="12.3sp"
+                        tools:ignore="RtlSymmetry,UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.nimap.machinetest.customView.TextViewBold
+                        android:id="@+id/txt_Collection_Total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:gravity="center"
+                        android:text="5000"
+                        android:textColor="@color/white"
+                        android:textSize="16.3sp" />
+
+
+                    <com.nimap.machinetest.customView.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:letterSpacing="0.04"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:text="GOAlS"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="12.3sp"
+                        tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+
+                    <com.nimap.machinetest.customView.TextViewBold
+                        android:id="@+id/txt_Start_Tym"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:letterSpacing="0.04"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:paddingStart="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="16.3sp"
+                        android:visibility="gone"
+                        tools:ignore="RtlSymmetry,UnusedAttribute"
+                        tools:text="9 month ago" />
+
+                    <com.nimap.machinetest.customView.TextViewBold
+                        android:id="@+id/txt_End_Tym"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:letterSpacing="0.04"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:paddingStart="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="16.3sp"
+                        tools:ignore="RtlSymmetry,UnusedAttribute"
+                        tools:text="1 " />
+
+                    <com.nimap.machinetest.customView.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:letterSpacing="0.04"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:paddingStart="5dp"
+                        android:text="Ends In"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="12.3sp"
+                        tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <com.nimap.machinetest.customView.TextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/bg_title"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="Pledge"
+                        android:textAllCaps="true"
+                        android:textColor="@color/blue"
+                        android:textSize="12.3sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
